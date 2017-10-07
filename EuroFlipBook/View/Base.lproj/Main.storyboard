@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tOt-Wn-hDy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7X6-Lp-r47">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="tOt-Wn-hDy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="naL-mo-Tzo">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="H1X-Hz-Tld" kind="relationship" relationship="rootViewController" id="AS1-Pd-RGo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSR-bo-zDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="480"/>
+        </scene>
+        <!--Entry Controller-->
+        <scene sceneID="poT-if-0Fh">
+            <objects>
+                <viewController storyboardIdentifier="EntryController" id="H1X-Hz-Tld" customClass="EntryController" customModule="EuroFlipBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qOb-xh-8TZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sok-Hk-Cs9">
+                                <rect key="frame" x="0.0" y="223.5" width="375" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXe-GZ-lHQ">
+                                        <rect key="frame" x="70" y="56.5" width="235" height="127"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cXe-GZ-lHQ" secondAttribute="height" multiplier="390:210" id="Nwt-KB-XqE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="FlipBookEntry"/>
+                                        <connections>
+                                            <action selector="enter:" destination="H1X-Hz-Tld" eventType="touchUpInside" id="H7i-rE-nig"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cXe-GZ-lHQ" firstAttribute="centerX" secondItem="sok-Hk-Cs9" secondAttribute="centerX" id="1M4-fH-Siw"/>
+                                    <constraint firstItem="cXe-GZ-lHQ" firstAttribute="leading" secondItem="sok-Hk-Cs9" secondAttribute="leading" constant="70" id="G7A-Kw-QL9"/>
+                                    <constraint firstItem="cXe-GZ-lHQ" firstAttribute="centerY" secondItem="sok-Hk-Cs9" secondAttribute="centerY" id="LVS-dJ-LgD"/>
+                                    <constraint firstAttribute="height" constant="240" id="YhW-6g-ZD6"/>
+                                    <constraint firstItem="cXe-GZ-lHQ" firstAttribute="trailing" secondItem="sok-Hk-Cs9" secondAttribute="trailing" constant="-70" id="dbX-7m-H5e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50864034415888892" green="0.70777771396388889" blue="0.7778186274333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3c3-sQ-gPW" firstAttribute="trailing" secondItem="sok-Hk-Cs9" secondAttribute="trailing" id="5nr-ac-CxK"/>
+                            <constraint firstItem="sok-Hk-Cs9" firstAttribute="centerY" secondItem="3c3-sQ-gPW" secondAttribute="centerY" id="bTj-bE-b0d"/>
+                            <constraint firstItem="sok-Hk-Cs9" firstAttribute="leading" secondItem="3c3-sQ-gPW" secondAttribute="leading" id="g6P-lr-TtC"/>
+                            <constraint firstItem="sok-Hk-Cs9" firstAttribute="centerX" secondItem="3c3-sQ-gPW" secondAttribute="centerX" id="zko-rX-wFl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3c3-sQ-gPW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i8o-5U-cfG"/>
+                    <connections>
+                        <outlet property="activitySpinner" destination="uy3-3A-CEB" id="C41-n1-AFh"/>
+                        <outlet property="activityViewPlacard" destination="N3D-aw-Ti1" id="BVw-M0-ElG"/>
+                        <outlet property="centerArea" destination="sok-Hk-Cs9" id="FTM-VE-RrO"/>
+                        <outlet property="enterFlipBookButton" destination="cXe-GZ-lHQ" id="l9Y-0c-iDb"/>
+                        <segue destination="8cX-B1-pcl" kind="show" identifier="showFlipBookController" id="hRj-Dp-ZFs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Gu-xG-Coa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="N3D-aw-Ti1">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uy3-3A-CEB">
+                            <rect key="frame" x="31.5" y="31.5" width="37" height="37"/>
+                        </activityIndicatorView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ActivityBG" translatesAutoresizingMaskIntoConstraints="NO" id="v4j-aQ-muA">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="uy3-3A-CEB" firstAttribute="centerX" secondItem="v4j-aQ-muA" secondAttribute="centerX" id="AT5-cf-HSF"/>
+                        <constraint firstItem="v4j-aQ-muA" firstAttribute="bottom" secondItem="tdn-D8-5x1" secondAttribute="bottom" id="F0C-aj-cgX"/>
+                        <constraint firstItem="v4j-aQ-muA" firstAttribute="leading" secondItem="tdn-D8-5x1" secondAttribute="leading" id="Qgg-3t-d2Y"/>
+                        <constraint firstItem="uy3-3A-CEB" firstAttribute="centerY" secondItem="v4j-aQ-muA" secondAttribute="centerY" id="pUp-gm-QG5"/>
+                        <constraint firstItem="tdn-D8-5x1" firstAttribute="trailing" secondItem="v4j-aQ-muA" secondAttribute="trailing" id="riH-eJ-Gxu"/>
+                        <constraint firstItem="v4j-aQ-muA" firstAttribute="top" secondItem="tdn-D8-5x1" secondAttribute="top" id="yZf-3u-mZM"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="tdn-D8-5x1"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="324" y="476.31184407796104"/>
+        </scene>
+        <!--Flip Book Controller-->
+        <scene sceneID="NGL-RR-HC5">
+            <objects>
+                <viewController storyboardIdentifier="flipBookController" id="8cX-B1-pcl" customClass="FlipBookController" customModule="EuroFlipBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QAn-sB-dpS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5cx-0j-IvM" userLabel="BottomFlipView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9XC-aC-Zsq" userLabel="TopFlipView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9XC-aC-Zsq" firstAttribute="centerX" secondItem="2OO-CE-jaW" secondAttribute="centerX" id="3h2-J0-FAM"/>
+                            <constraint firstItem="2OO-CE-jaW" firstAttribute="bottom" secondItem="5cx-0j-IvM" secondAttribute="bottom" id="9RS-tv-oTx"/>
+                            <constraint firstItem="5cx-0j-IvM" firstAttribute="centerX" secondItem="2OO-CE-jaW" secondAttribute="centerX" id="ASN-n7-PNd"/>
+                            <constraint firstItem="5cx-0j-IvM" firstAttribute="centerY" secondItem="2OO-CE-jaW" secondAttribute="centerY" id="G4c-LI-Caj"/>
+                            <constraint firstItem="2OO-CE-jaW" firstAttribute="trailing" secondItem="5cx-0j-IvM" secondAttribute="trailing" id="QK9-EX-GEC"/>
+                            <constraint firstItem="9XC-aC-Zsq" firstAttribute="centerY" secondItem="2OO-CE-jaW" secondAttribute="centerY" id="VVO-23-8Va"/>
+                            <constraint firstItem="5cx-0j-IvM" firstAttribute="leading" secondItem="2OO-CE-jaW" secondAttribute="leading" id="bjb-OS-AJJ"/>
+                            <constraint firstItem="9XC-aC-Zsq" firstAttribute="top" secondItem="2OO-CE-jaW" secondAttribute="top" id="irw-Ga-Rbj"/>
+                            <constraint firstItem="2OO-CE-jaW" firstAttribute="bottom" secondItem="9XC-aC-Zsq" secondAttribute="bottom" id="oQA-tT-y4M"/>
+                            <constraint firstItem="9XC-aC-Zsq" firstAttribute="leading" secondItem="2OO-CE-jaW" secondAttribute="leading" id="oRJ-fz-SW6"/>
+                            <constraint firstItem="2OO-CE-jaW" firstAttribute="trailing" secondItem="9XC-aC-Zsq" secondAttribute="trailing" id="prQ-Ye-OdS"/>
+                            <constraint firstItem="5cx-0j-IvM" firstAttribute="top" secondItem="2OO-CE-jaW" secondAttribute="top" id="rws-vj-Ch0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2OO-CE-jaW"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomFlipView" destination="5cx-0j-IvM" id="nQh-yB-j13"/>
+                        <outlet property="topFlipView" destination="9XC-aC-Zsq" id="wKJ-fN-04b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ME6-ld-SOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="475.41229385307349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ActivityBG" width="65" height="65"/>
+        <image name="FlipBookEntry" width="362" height="201"/>
+    </resources>
+</document>

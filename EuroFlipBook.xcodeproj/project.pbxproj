@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2070EC081F886403007BA3BA /* StackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070EC071F886403007BA3BA /* StackType.swift */; };
 		20B8AABD1F88510D00E36323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8AABC1F88510D00E36323 /* AppDelegate.swift */; };
-		20B8AABF1F88510D00E36323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8AABE1F88510D00E36323 /* ViewController.swift */; };
 		20B8AAC21F88510D00E36323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B8AAC01F88510D00E36323 /* Main.storyboard */; };
 		20B8AAC41F88510D00E36323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B8AAC31F88510D00E36323 /* Assets.xcassets */; };
 		20B8AAC71F88510D00E36323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B8AAC51F88510D00E36323 /* LaunchScreen.storyboard */; };
+		20B8AACF1F8851FF00E36323 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8AACE1F8851FF00E36323 /* EntryController.swift */; };
+		20B8AAD11F8852AE00E36323 /* EuroFlipBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8AAD01F8852AE00E36323 /* EuroFlipBook.swift */; };
+		20B8AAD31F8855B700E36323 /* FlipBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8AAD21F8855B700E36323 /* FlipBookController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2070EC071F886403007BA3BA /* StackType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackType.swift; sourceTree = "<group>"; };
 		20B8AAB91F88510D00E36323 /* EuroFlipBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuroFlipBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B8AABC1F88510D00E36323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20B8AABE1F88510D00E36323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20B8AAC11F88510D00E36323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20B8AAC31F88510D00E36323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20B8AAC61F88510D00E36323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20B8AAC81F88510D00E36323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B8AACE1F8851FF00E36323 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		20B8AAD01F8852AE00E36323 /* EuroFlipBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuroFlipBook.swift; sourceTree = "<group>"; };
+		20B8AAD21F8855B700E36323 /* FlipBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipBookController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2070EC021F886304007BA3BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20B8AACE1F8851FF00E36323 /* EntryController.swift */,
+				20B8AAD21F8855B700E36323 /* FlipBookController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2070EC031F88634E007BA3BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20B8AAC81F88510D00E36323 /* Info.plist */,
+				2070EC071F886403007BA3BA /* StackType.swift */,
+				20B8AABC1F88510D00E36323 /* AppDelegate.swift */,
+				20B8AAD01F8852AE00E36323 /* EuroFlipBook.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2070EC041F886386007BA3BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20B8AAC31F88510D00E36323 /* Assets.xcassets */,
+				20B8AAC01F88510D00E36323 /* Main.storyboard */,
+				20B8AAC51F88510D00E36323 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		20B8AAB01F88510D00E36323 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +90,9 @@
 		20B8AABB1F88510D00E36323 /* EuroFlipBook */ = {
 			isa = PBXGroup;
 			children = (
-				20B8AABC1F88510D00E36323 /* AppDelegate.swift */,
-				20B8AABE1F88510D00E36323 /* ViewController.swift */,
-				20B8AAC01F88510D00E36323 /* Main.storyboard */,
-				20B8AAC31F88510D00E36323 /* Assets.xcassets */,
-				20B8AAC51F88510D00E36323 /* LaunchScreen.storyboard */,
-				20B8AAC81F88510D00E36323 /* Info.plist */,
+				2070EC031F88634E007BA3BA /* Model */,
+				2070EC021F886304007BA3BA /* Controller */,
+				2070EC041F886386007BA3BA /* View */,
 			);
 			path = EuroFlipBook;
 			sourceTree = "<group>";
@@ -136,7 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20B8AABF1F88510D00E36323 /* ViewController.swift in Sources */,
+				2070EC081F886403007BA3BA /* StackType.swift in Sources */,
+				20B8AACF1F8851FF00E36323 /* EntryController.swift in Sources */,
+				20B8AAD31F8855B700E36323 /* FlipBookController.swift in Sources */,
+				20B8AAD11F8852AE00E36323 /* EuroFlipBook.swift in Sources */,
 				20B8AABD1F88510D00E36323 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
