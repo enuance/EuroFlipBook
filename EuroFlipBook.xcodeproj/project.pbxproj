@@ -15,6 +15,9 @@
 		20B8AACF1F8851FF00E36323 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8AACE1F8851FF00E36323 /* EntryController.swift */; };
 		20B8AAD11F8852AE00E36323 /* EuroFlipBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8AAD01F8852AE00E36323 /* EuroFlipBook.swift */; };
 		20B8AAD31F8855B700E36323 /* FlipBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8AAD21F8855B700E36323 /* FlipBookController.swift */; };
+		20BC2D541F896DE7009046BB /* FlickrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC2D531F896DE7009046BB /* FlickrClient.swift */; };
+		20BC2D561F896FED009046BB /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC2D551F896FED009046BB /* ErrorHandling.swift */; };
+		20BC2D581F89783E009046BB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20BC2D571F89783E009046BB /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		20B8AACE1F8851FF00E36323 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		20B8AAD01F8852AE00E36323 /* EuroFlipBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuroFlipBook.swift; sourceTree = "<group>"; };
 		20B8AAD21F8855B700E36323 /* FlipBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipBookController.swift; sourceTree = "<group>"; };
+		20BC2D531F896DE7009046BB /* FlickrClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrClient.swift; sourceTree = "<group>"; };
+		20BC2D551F896FED009046BB /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		20BC2D571F89783E009046BB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				20B8AAC81F88510D00E36323 /* Info.plist */,
-				2070EC071F886403007BA3BA /* StackType.swift */,
 				20B8AABC1F88510D00E36323 /* AppDelegate.swift */,
+				2070EC071F886403007BA3BA /* StackType.swift */,
 				20B8AAD01F8852AE00E36323 /* EuroFlipBook.swift */,
+				20BC2D531F896DE7009046BB /* FlickrClient.swift */,
+				20BC2D551F896FED009046BB /* ErrorHandling.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -74,6 +82,7 @@
 		20B8AAB01F88510D00E36323 = {
 			isa = PBXGroup;
 			children = (
+				20BC2D571F89783E009046BB /* Default-568h@2x.png */,
 				20B8AABB1F88510D00E36323 /* EuroFlipBook */,
 				20B8AABA1F88510D00E36323 /* Products */,
 			);
@@ -157,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B8AAC71F88510D00E36323 /* LaunchScreen.storyboard in Resources */,
+				20BC2D581F89783E009046BB /* Default-568h@2x.png in Resources */,
 				20B8AAC41F88510D00E36323 /* Assets.xcassets in Resources */,
 				20B8AAC21F88510D00E36323 /* Main.storyboard in Resources */,
 			);
@@ -171,9 +181,11 @@
 			files = (
 				2070EC081F886403007BA3BA /* StackType.swift in Sources */,
 				20B8AACF1F8851FF00E36323 /* EntryController.swift in Sources */,
+				20BC2D561F896FED009046BB /* ErrorHandling.swift in Sources */,
 				20B8AAD31F8855B700E36323 /* FlipBookController.swift in Sources */,
 				20B8AAD11F8852AE00E36323 /* EuroFlipBook.swift in Sources */,
 				20B8AABD1F88510D00E36323 /* AppDelegate.swift in Sources */,
+				20BC2D541F896DE7009046BB /* FlickrClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,10 +321,9 @@
 		20B8AACC1F88510D00E36323 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6Y8F6EN66;
-				INFOPLIST_FILE = EuroFlipBook/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EuroFlipBook/Model/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = enuance.EuroFlipBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -324,10 +335,9 @@
 		20B8AACD1F88510D00E36323 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6Y8F6EN66;
-				INFOPLIST_FILE = EuroFlipBook/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EuroFlipBook/Model/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = enuance.EuroFlipBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";

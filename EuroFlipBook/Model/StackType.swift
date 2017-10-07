@@ -25,6 +25,11 @@ class Stack<Element>{
     var underneath: Element?{return top?.nextStackElement?.value}
     //The count of the elements inside the stack
     var count: Int{return findCount()}
+    //Returns true if the stack is empty
+    var isEmpty: Bool{return top == nil}
+    
+    //Removes all the elements in the stack
+    func removeAll(){for _ in 0..<count{_ = pop()}}
     
     func push(_ value: Element){
         let newStackTop = StackElement(value: value)
