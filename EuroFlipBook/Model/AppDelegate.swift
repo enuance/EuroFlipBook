@@ -5,6 +5,9 @@
 //  Created by Stephen Martinez on 10/6/17.
 //  Copyright © 2017 Stephen Martinez. All rights reserved.
 //
+//  Clone this project by entering this in the command line:
+//  git clone https://github.com/enuance/EuroFlipBook.git
+//
 
 import UIKit
 
