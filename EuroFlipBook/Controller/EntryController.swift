@@ -78,6 +78,10 @@ class EntryController: UIViewController{
 }
 
 
+
+
+
+
 extension EntryController{
     
     func showLoading(completed: (()->Void)? = nil){
